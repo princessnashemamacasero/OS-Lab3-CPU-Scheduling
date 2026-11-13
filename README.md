@@ -24,7 +24,7 @@ The activity uses Python to simulate how the CPU handles different processes and
  
 ### III. Scheduling Algorithms
 
-1. Multilevel Queue Scheduling (MLQ)
+## **1. Multilevel Queue Scheduling (MLQ)**
 
 Multilevel Queue Scheduling divides processes into different queues based on their categories. In this activity, there are two queues:
 
@@ -34,7 +34,7 @@ Multilevel Queue Scheduling divides processes into different queues based on the
 
 Queue 1 has higher priority than Queue 2. If a Queue 1 process becomes ready while a Queue 2 process is running, the Queue 2 process is interrupted and resumes later.
 
-2. Rate Monotonic Scheduling (RMS)
+## **2. Rate Monotonic Scheduling (RMS)**
 
 RMS is a fixed-priority preemptive scheduling algorithm used for periodic real-time tasks. The task with the shortest period receives the highest priority.
 
@@ -48,7 +48,7 @@ For this activity, the priority order is:
 
 A higher-priority task can interrupt a lower-priority task when it becomes ready.
 
-3. Earliest Deadline First (EDF)
+## ** 3. Earliest Deadline First (EDF)**
 
 EDF is a dynamic-priority preemptive scheduling algorithm. It selects the ready task with the earliest absolute deadline.
 
@@ -60,7 +60,7 @@ Unlike RMS, EDF does not have a permanent priority order. The priority changes d
  
 ### IV. Program Implementation
 
-1. Multilevel Queue Scheduling
+## **1. Multilevel Queue Scheduling**
 
 The MLQ program was implemented in Python using the deque module to manage the ready queues.
 
@@ -68,7 +68,7 @@ The program separates processes into Queue 1 and Queue 2. Queue 1 uses Round Rob
 
 After execution, it calculates the completion time, turnaround time, waiting time, and their averages.
 
-2. Rate Monotonic Scheduling
+## **2. Rate Monotonic Scheduling**
 
 The RMS program was implemented using Python lists to store task information and their generated instances.
 
@@ -76,7 +76,7 @@ Each task has an execution time, period, and relative deadline. The program gene
 
 The CPU checks the ready tasks every 1 ms and selects the task with the highest fixed priority. It also generates a Gantt chart, calculates CPU utilization, and checks whether each task instance meets its deadline.
 
-3. Earliest Deadline First
+## **3. Earliest Deadline First**
 
 The EDF program was implemented using Python to manage periodic task instances and their absolute deadlines.
 
@@ -86,7 +86,7 @@ The program generates a Gantt chart and displays the completion time and deadlin
  
 ### V. Test Data
 
-1. MLQ Test Data
+## **1. MLQ Test Data**
 
 | Process | Arrival Time | Burst Time | Queue |
 | :-----: | :----------: | :--------: | :---: |
@@ -101,7 +101,7 @@ The program generates a Gantt chart and displays the completion time and deadlin
 - Time Quantum: 2 ms
 - Queue 1 has higher priority than Queue 2.
 
-2. RMS Test Data
+## **2. RMS Test Data**
 
 | Task | Execution Time (C) | Period (T) | Deadline (D) |
 | :--: | :----------------: | :--------: | :----------: |
@@ -113,7 +113,7 @@ The program generates a Gantt chart and displays the completion time and deadlin
 - Scheduling Type: Preemptive
 - Priority: Shortest period receives the highest priority.
 
-3. EDF Test Data
+## **3. EDF Test Data**
 
 | Task | Execution Time (C) | Period (T) | Deadline (D) |
 | :--: | :----------------: | :--------: | :----------: |
@@ -127,7 +127,7 @@ The program generates a Gantt chart and displays the completion time and deadlin
  
 ### VI. Results and Discussion
 
-1. MLQ Scheduling Results
+## **1. MLQ Scheduling Results**
 
 **Gantt Chart**
 
@@ -154,7 +154,7 @@ The results show that Queue 1 processes received priority over Queue 2 processes
 
 All processes completed within the 20 ms execution period. The CPU utilization was 100% because there was no idle time during the simulation. Queue 2 processes had longer waiting times because they had lower priority.
 
-2. RMS Results
+## **2. RMS Results**
 
 Priority Order
 
@@ -191,7 +191,7 @@ The results show that T1 receives the highest priority because it has the shorte
 
 The CPU utilization is 65%, which is below the RMS sufficient utilization bound of 77.98%. The program passed the utilization-bound test, and all 11 task instances successfully completed before their deadlines.
 
-3. EDF Results
+## **3. EDF Results**
 
 **Gantt Chart**
 
