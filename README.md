@@ -7,13 +7,13 @@
 - Instructor: Maria Fe P. Bahinting
 - Date Submitted: November 13, 2026
  
-### I. Introduction
+## I. Introduction
 
 This laboratory activity focuses on implementing and understanding three CPU scheduling algorithms: Multilevel Queue (MLQ), Rate Monotonic Scheduling (RMS), and Earliest Deadline First (EDF).
 
 The activity uses Python to simulate how the CPU handles different processes and periodic tasks. It also uses Gantt charts to show the execution order of tasks. Through this activity, we can understand how scheduling algorithms assign priorities, manage CPU time, and check whether tasks finish before their deadlines.
  
-### II. Objectives
+## II. Objectives
 
 1. Explain the operation of Multilevel Queue, RMS, and EDF scheduling.
 2. Implement MLQ scheduling using Round Robin and FCFS.
@@ -22,7 +22,7 @@ The activity uses Python to simulate how the CPU handles different processes and
 5. Calculate CPU utilization, waiting time, turnaround time, and deadline compliance.
 6. Create and manage a GitHub repository with source code and documentation.
  
-### III. Scheduling Algorithms
+## III. Scheduling Algorithms
 
 ## **1. Multilevel Queue Scheduling (MLQ)**
 
