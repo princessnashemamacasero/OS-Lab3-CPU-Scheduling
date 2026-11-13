@@ -48,7 +48,7 @@ For this activity, the priority order is:
 
 A higher-priority task can interrupt a lower-priority task when it becomes ready.
 
-## ** 3. Earliest Deadline First (EDF)**
+## **3. Earliest Deadline First (EDF)**
 
 EDF is a dynamic-priority preemptive scheduling algorithm. It selects the ready task with the earliest absolute deadline.
 
