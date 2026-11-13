@@ -1,7 +1,7 @@
 # OS Laboratory Activity 3
 ## Multilevel Queue and Real-Time CPU Scheduling
  
-### Student Information
+## Student Information
 - Name: Princess Nashema M. Macasero
 - Course and Section: BS Computer Applications | B186
 - Instructor: Maria Fe P. Bahinting
